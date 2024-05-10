@@ -58,7 +58,7 @@ public class homework {
 
 //задание 6
         double gramInOneBananna = 80.0;
-        double oneHungerdMlMilkGram = 105.0;
+        double oneHungerdMlMilkMl = 105.0;
         double oneiceCreamGram = 100.0;
         double oneAggGram = 70.0;
 
@@ -67,7 +67,7 @@ public class homework {
         int totalIceCream = 2;
         int totalAgg = 4;
 
-        double breakfastInGram = gramInOneBananna * totalBananas + oneHungerdMlMilkGram * totalMilk + oneiceCreamGram * totalIceCream + oneAggGram + totalAgg;
+        double breakfastInGram = gramInOneBananna * totalBananas + totalMilk / 100 * oneHungerdMlMilkMl + oneiceCreamGram * totalIceCream + oneAggGram + totalAgg;
         System.out.println("Завтрак в граммах - " + breakfastInGram + " гр.");
 
         double breakfastInKilogram = breakfastInGram / 1000;
@@ -85,20 +85,20 @@ public class homework {
     System.out.println();
 
 //задание 8
-    double MashaSalary = 67760;
-    double DenisSalary = 83690;
-    double KristinaSalary = 76230;
+    double mashaSalary = 67760;
+    double denisSalary = 83690;
+    double kristinaSalary = 76230;
 
-    double newMashaSalary = MashaSalary + (MashaSalary * 10 /100);
-    double MashaAnnualIncome = (newMashaSalary*12) - (MashaSalary * 12) ;
+    double newMashaSalary = mashaSalary + (mashaSalary * 10 /100);
+    double MashaAnnualIncome = (newMashaSalary*12) - (mashaSalary * 12) ;
     System.out.println("Маша теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на " + MashaAnnualIncome + " рублей.");
 
-    double newDenisSalary = DenisSalary + (DenisSalary*10/100);
-    double DenisAnnualIncome = (newDenisSalary*12) - (DenisSalary*12);
+    double newDenisSalary = denisSalary + (denisSalary*10/100);
+    double DenisAnnualIncome = (newDenisSalary*12) - (denisSalary*12);
     System.out.println("Денис теперь получает " + newDenisSalary + " рублей. Годовой доход вырос на " + DenisAnnualIncome + " рублей.");
 
-    double newKristinaSalary = KristinaSalary + (KristinaSalary * 10 / 100);
-    double KristinaAnnualIncome = (newKristinaSalary * 12) - (KristinaSalary * 12);
+    double newKristinaSalary = kristinaSalary + (kristinaSalary * 10 / 100);
+    double KristinaAnnualIncome = (newKristinaSalary * 12) - (kristinaSalary * 12);
     System.out.println("Кристина теперь получает " + newKristinaSalary + " рублей. Годовой доход вырос на " + KristinaAnnualIncome + " рублей.");
 
     }
